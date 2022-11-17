@@ -8,7 +8,7 @@ createDeepPatientLevelPredictionModuleSpecifications <- function(
   
   specifications <- list(
     module = "DeepPatientLevelPredictionModule",
-    version = "0.0.1",
+    version = "0.0.2",
     remoteRepo = "github.com",
     remoteUsername = "ohdsi",
     settings = modelDesignList

@@ -28,7 +28,7 @@
 				"rlang",
 				"torch"
 			]
-		}
+		},
 		"Andromeda" : {
 			"Package" : "Andromeda",
 			"Version" : "0.6.1",
