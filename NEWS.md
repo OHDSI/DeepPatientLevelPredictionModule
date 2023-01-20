@@ -1,3 +1,7 @@
+DeepPatientLevelPredictionModule 0.0.4
+=======================
+Fixing DeepPatientLevelPrediction in renv
+
 DeepPatientLevelPredictionModule 0.0.3
 =======================
 
