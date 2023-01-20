@@ -1966,7 +1966,7 @@
 			"RemoteType" : "github",
 			"RemoteHost" : "api.github.com",
 			"RemoteRepo" : "DeepPatientLevelPrediction",
-			"RemoteUsername" : "ohdsi-studies",
+			"RemoteUsername" : "ohdsi",
 			"RemoteRef" : "main"
 		}
 	}
