@@ -1,4 +1,4 @@
-# Copyright 2022 Observational Health Data Sciences and Informatics
+# Copyright 2023 Observational Health Data Sciences and Informatics
 #
 # This file is part of CohortGeneratorModule
 #
@@ -36,8 +36,10 @@ createCohortDefinitionSetFromJobContext <- function(sharedResources, settings) {
   if (length(sharedResources) <= 0) {
     stop("No shared resources found")
   }
-  cohortDefinitionSharedResource <- getSharedResourceByClassName(sharedResources = sharedResources, 
-                                                                 class = "CohortDefinitionSharedResources")
+  cohortDefinitionSharedResource <- getSharedResourceByClassName(
+    sharedResources = sharedResources,
+    class = "CohortDefinitionSharedResources"
+  )
   if (is.null(cohortDefinitionSharedResource)) {
     stop("Cohort definition shared resource not found!")
   }
@@ -60,8 +62,9 @@ createCohortDefinitionSetFromJobContext <- function(sharedResources, settings) {
 
 # Module methods -------------------------
 execute <- function(jobContext) {
+  library(DeepPatientLevelPrediction)
   rlang::inform("Validating inputs")
-  inherits(jobContext, 'list')
+  inherits(jobContext, "list")
 
   if (is.null(jobContext$settings)) {
     stop("Analysis settings not found in job context")
@@ -72,66 +75,64 @@ execute <- function(jobContext) {
   if (is.null(jobContext$moduleExecutionSettings)) {
     stop("Execution settings not found in job context")
   }
-  
+
   workFolder <- jobContext$moduleExecutionSettings$workSubFolder
   resultsFolder <- jobContext$moduleExecutionSettings$resultsSubFolder
-  
+
   rlang::inform("Executing PLP")
   moduleInfo <- getModuleInfo()
-  
+
   # Creating database details
   databaseDetails <- PatientLevelPrediction::createDatabaseDetails(
-    connectionDetails = jobContext$moduleExecutionSettings$connectionDetails, 
+    connectionDetails = jobContext$moduleExecutionSettings$connectionDetails,
     cdmDatabaseSchema = jobContext$moduleExecutionSettings$cdmDatabaseSchema,
     cohortDatabaseSchema = jobContext$moduleExecutionSettings$workDatabaseSchema,
     cdmDatabaseName = jobContext$moduleExecutionSettings$connectionDetailsReference,
     cdmDatabaseId = jobContext$moduleExecutionSettings$databaseId,
-    #tempEmulationSchema =  , is there s temp schema specified anywhere?
-    cohortTable = jobContext$moduleExecutionSettings$cohortTableNames$cohortTable, 
-    outcomeDatabaseSchema = jobContext$moduleExecutionSettings$workDatabaseSchema, 
+    # tempEmulationSchema =  , is there s temp schema specified anywhere?
+    cohortTable = jobContext$moduleExecutionSettings$cohortTableNames$cohortTable,
+    outcomeDatabaseSchema = jobContext$moduleExecutionSettings$workDatabaseSchema,
     outcomeTable = jobContext$moduleExecutionSettings$cohortTableNames$cohortTable
   )
-  
+
   # find where cohortDefinitions are as sharedResources is a list
   cohortDefinitionSet <- createCohortDefinitionSetFromJobContext(
     sharedResources = jobContext$sharedResources,
     settings = jobContext$settings
-    )
-             
+  )
+
   # run the models
   PatientLevelPrediction::runMultiplePlp(
-    databaseDetails = databaseDetails, 
-    modelDesignList = jobContext$settings, 
+    databaseDetails = databaseDetails,
+    modelDesignList = jobContext$settings,
     cohortDefinitions = cohortDefinitionSet,
     saveDirectory = workFolder
-      )
-  
+  )
+
   # Export the results
   rlang::inform("Export data to csv files")
 
   sqliteConnectionDetails <- DatabaseConnector::createConnectionDetails(
-    dbms = 'sqlite',
-    server = file.path(workFolder, "sqlite","databaseFile.sqlite")
+    dbms = "sqlite",
+    server = file.path(workFolder, "sqlite", "databaseFile.sqlite")
   )
-    
+
   PatientLevelPrediction::extractDatabaseToCsv(
-    connectionDetails = sqliteConnectionDetails, 
+    connectionDetails = sqliteConnectionDetails,
     databaseSchemaSettings = PatientLevelPrediction::createDatabaseSchemaSettings(
-      resultSchema = 'main', # sqlite settings
-      tablePrefix = '', # sqlite settings
-      targetDialect = 'sqlite', 
+      resultSchema = "main", # sqlite settings
+      tablePrefix = "", # sqlite settings
+      targetDialect = "sqlite",
       tempEmulationSchema = NULL
-    ), 
-    csvFolder = file.path(workFolder, 'results'),
+    ),
+    csvFolder = file.path(workFolder, "results"),
     fileAppend = NULL
   )
-  
+
   # Zip the results
   rlang::inform("Zipping csv files")
   DatabaseConnector::createZipFile(
-    zipFile = file.path(resultsFolder, 'results.zip'),
-    files = file.path(workFolder, 'results')
+    zipFile = file.path(resultsFolder, "results.zip"),
+    files = file.path(workFolder, "results")
   )
-  
-  
 }
