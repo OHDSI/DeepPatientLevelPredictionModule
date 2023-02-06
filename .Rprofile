@@ -1,2 +1,2 @@
 source("renv/activate.R")
-Sys.setenv("torch_install" = "1")
+Sys.setenv("TORCH_INSTALL" = "1")
