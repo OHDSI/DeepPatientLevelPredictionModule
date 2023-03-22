@@ -343,10 +343,10 @@
     },
     "SqlRender": {
       "Package": "SqlRender",
-      "Version": "1.13.1",
+      "Version": "1.13.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "026b71f51728b52d4dd5f2d90222a09e",
+      "Hash": "e021c3d72ef96ad8f0f3a9a926fc5487",
       "Requirements": [
         "checkmate",
         "rJava",
