@@ -342,6 +342,18 @@
         "Rcpp"
       ]
     },
+    "ResultModelManager": {
+      "Package": "ResultModelManager",
+      "Version": "0.3.0",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "ohdsi",
+      "RemoteRepo": "ResultModelManager",
+      "RemoteRef": "main",
+      "RemoteSha": "cb066fcd44393b4608a3cfa6a8f46d14b20a9daa",
+      "Requirements": []
+    },
     "SqlRender": {
       "Package": "SqlRender",
       "Version": "1.13.0",
