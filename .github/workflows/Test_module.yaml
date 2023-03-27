@@ -60,8 +60,9 @@ jobs:
       - uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 4
+          
       - name: Setup upterm session
-         uses: lhotari/action-upterm@v1
+        uses: lhotari/action-upterm@v1
          
       - name: Run module test script
         run: Rscript tests/testScript.R
