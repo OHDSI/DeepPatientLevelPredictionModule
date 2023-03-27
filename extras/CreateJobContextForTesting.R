@@ -1,6 +1,7 @@
 # Create a job context for testing purposes
 library(Strategus)
 library(dplyr)
+library(DeepPatientLevelPrediction)
 source("SettingsFunctions.R")
 
 # Generic Helpers ----------------------------
@@ -50,12 +51,12 @@ makeModelDesignSettings <- function(targetId, outcomeId, popSettings, covarSetti
       residualDropout = 0,
       hiddenDropout = 0,
       sizeEmbedding = 32,
-      weightDecay = 0.0,
-      learningRate = 3e-4,
-      randomSample = 1,
-      device = "cpu",
-      batchSize = 256,
-      epochs = 1
+      estimatorSettings = setEstimator(learningRate = 3e-4,
+                                       weightDecay = 0.0,
+                                       device = "cpu",
+                                       batchSize = 256,
+                                       epochs = 1),
+      randomSample = 1
     ),
     splitSettings = PatientLevelPrediction::createDefaultSplitSetting(),
     runCovariateSummary = T
