@@ -61,5 +61,8 @@ jobs:
         with:
           cache-version: 2
           
+      - name: Setup upterm session
+        uses: lhotari/action-upterm@v1
+          
       - name: Run module test script
         run: Rscript tests/testScript.R
