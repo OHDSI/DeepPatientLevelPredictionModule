@@ -28,18 +28,6 @@
         "zip"
       ]
     },
-    "zip": {
-      "Package": "zip",
-      "Version": "2.2.2.9000",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "egillax",
-      "RemoteRepo": "zip",
-      "RemoteRef": "miniz_2.1.0",
-      "RemoteSha": "3f47f816ed5e8c340bc824b29707d38adcf09e62",
-      "Requirements": []
-    },
     "BH": {
       "Package": "BH",
       "Version": "1.78.0-0",
@@ -789,6 +777,12 @@
       "Hash": "3d5108641f47470611a32d0bdf357a72",
       "Requirements": []
     },
+    "later": {
+      "Package": "later",
+      "Version": "1.3.0",
+      "Source": "Repository",
+      "Requirements": []
+    },
     "lattice": {
       "Package": "lattice",
       "Version": "0.20-45",
@@ -980,6 +974,12 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "9df08911be2e031016e2a93e22d9aa60",
+      "Requirements": []
+    },
+    "pool": {
+      "Package": "pool",
+      "Version": "1.0.1",
+      "Source": "Repository",
       "Requirements": []
     },
     "praise": {
@@ -1427,6 +1427,12 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "40682ed6a969ea5abfd351eb67833adc",
+      "Requirements": []
+    },
+    "zip": {
+      "Package": "zip",
+      "Version": "2.2.2",
+      "Source": "Repository",
       "Requirements": []
     }
   }
