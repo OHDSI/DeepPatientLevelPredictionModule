@@ -1419,10 +1419,14 @@
     },
     "zip": {
       "Package": "zip",
-      "Version": "2.2.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "c42bfcec3fa6a0cce17ce1f8bc684f88",
+      "Version": "2.2.2.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "egillax",
+      "RemoteRepo": "zip",
+      "RemoteRef": "miniz_2.1.0",
+      "RemoteSha": "3f47f816ed5e8c340bc824b29707d38adcf09e62",
       "Requirements": []
     }
   }
