@@ -1431,8 +1431,14 @@
     },
     "zip": {
       "Package": "zip",
-      "Version": "2.2.2",
-      "Source": "Repository",
+      "Version": "2.2.2.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "egillax",
+      "RemoteRepo": "zip",
+      "RemoteRef": "miniz_2.1.0",
+      "RemoteSha": "47121f1340c66bddf9489c92b962ee517ca07ddd",
       "Requirements": []
     }
   }
