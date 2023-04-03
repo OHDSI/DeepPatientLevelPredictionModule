@@ -63,6 +63,12 @@ createCohortDefinitionSetFromJobContext <- function(sharedResources, settings) {
 # Module methods -------------------------
 execute <- function(jobContext) {
   library(DeepPatientLevelPrediction)
+  
+  rlang::inform("Install additional files for torch")
+  if(!torch::torch_is_installed()){
+    torch::install_torch(timeout=3600)  
+  }
+  
   rlang::inform("Validating inputs")
   inherits(jobContext, "list")
 
