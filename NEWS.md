@@ -1,3 +1,8 @@
+DeepPatientLevelPredictionModule 0.0.6
+=======================
+- Update to work with DeepPLP 1.1.2 and PLP 6.3
+- Remove table prefix for now
+
 DeepPatientLevelPredictionModule 0.0.5
 =======================
 Added tests

@@ -110,24 +110,25 @@
     },
     "DeepPatientLevelPrediction": {
       "Package": "DeepPatientLevelPrediction",
-      "Version": "1.0.2",
+      "Version": "1.1.2",
       "Source": "GitHub",
-      "Remotes": "ohdsi/PatientLevelPrediction, ohdsi/FeatureExtraction,\n        ohdsi/Eunomia",
+      "Remotes": "ohdsi/PatientLevelPrediction, ohdsi/FeatureExtraction,\n        ohdsi/Eunomia, ohdsi/ResultModelManager",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteRepo": "DeepPatientLevelPrediction",
       "RemoteUsername": "ohdsi",
       "RemoteRef": "HEAD",
-      "RemoteSha": "46da64d1209fceda6fe916408c12eaf5d649f9dd",
-      "Hash": "cac6876a4825880e54c4b389312eb46c",
+      "RemoteSha": "89dd41be16f8338465b5ed2f4f59a2daea21f261",
+      "Hash": "f84b3d246cbb4dfe483fee526ec90be8",
       "Requirements": [
         "FeatureExtraction",
         "ParallelLogger",
         "PatientLevelPrediction",
-        "data.table",
         "dplyr",
         "rlang",
-        "torch"
+        "torch",
+        "torchopt",
+        "withr"
       ]
     },
     "Eunomia": {
@@ -226,11 +227,11 @@
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteUsername": "ohdsi",
       "RemoteRepo": "ParallelLogger",
+      "RemoteUsername": "ohdsi",
       "RemoteRef": "main",
-      "RemoteSha": "7042144d51e34cb357783da37317824532798d72",
-      "Hash": "56a0748bff25ea6b9f3b6633baed5945",
+      "RemoteSha": "e1ef69e217f60d0cd53ed23815fd9b9fa74aba4a",
+      "Hash": "e5d5eeeb036cbbea4f63e15caeeadf2f",
       "Requirements": [
         "jsonlite",
         "snow",
@@ -314,10 +315,10 @@
     },
     "Rcpp": {
       "Package": "Rcpp",
-      "Version": "1.0.9",
+      "Version": "1.0.10",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "e9c08b94391e9f3f97355841229124f2",
+      "Hash": "e749cae40fa9ef469b6050959517453c",
       "Requirements": []
     },
     "RcppEigen": {
@@ -340,6 +341,18 @@
       "Requirements": [
         "Rcpp"
       ]
+    },
+    "ResultModelManager": {
+      "Package": "ResultModelManager",
+      "Version": "0.3.0",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "ohdsi",
+      "RemoteRepo": "ResultModelManager",
+      "RemoteRef": "main",
+      "RemoteSha": "cb066fcd44393b4608a3cfa6a8f46d14b20a9daa",
+      "Requirements": []
     },
     "SqlRender": {
       "Package": "SqlRender",
@@ -381,10 +394,10 @@
     },
     "bit": {
       "Package": "bit",
-      "Version": "4.0.4",
+      "Version": "4.0.5",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "f36715f14d94678eea9933af927bc15d",
+      "Hash": "d242abec29412ce988848d0294b208fd",
       "Requirements": []
     },
     "bit64": {
@@ -450,10 +463,10 @@
     },
     "cli": {
       "Package": "cli",
-      "Version": "3.6.0",
+      "Version": "3.6.1",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "3177a5a16c243adc199ba33117bd9657",
+      "Hash": "89e6d8219950eac806ae0c489052048a",
       "Requirements": []
     },
     "clipr": {
@@ -514,14 +527,6 @@
       "Hash": "e4f97056611e8e6b8b852d13b7400cf1",
       "Requirements": []
     },
-    "data.table": {
-      "Package": "data.table",
-      "Version": "1.14.4",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "b9b912b41064aaa79270f24d123c887d",
-      "Requirements": []
-    },
     "dbplyr": {
       "Package": "dbplyr",
       "Version": "2.2.1",
@@ -579,12 +584,13 @@
     },
     "dplyr": {
       "Package": "dplyr",
-      "Version": "1.0.10",
+      "Version": "1.1.1",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "539412282059f7f0c07295723d23f987",
+      "Hash": "eb5742d256a0d9306d85ea68756d8187",
       "Requirements": [
         "R6",
+        "cli",
         "generics",
         "glue",
         "lifecycle",
@@ -616,10 +622,10 @@
     },
     "fansi": {
       "Package": "fansi",
-      "Version": "1.0.3",
+      "Version": "1.0.4",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "83a8afdbe71839506baa9f90eebad7ec",
+      "Hash": "1d9e7ad3c8312a192dea7d3db0274fde",
       "Requirements": []
     },
     "farver": {
@@ -771,6 +777,12 @@
       "Hash": "3d5108641f47470611a32d0bdf357a72",
       "Requirements": []
     },
+    "later": {
+      "Package": "later",
+      "Version": "1.3.0",
+      "Source": "Repository",
+      "Requirements": []
+    },
     "lattice": {
       "Package": "lattice",
       "Version": "0.20-45",
@@ -891,10 +903,10 @@
     },
     "pillar": {
       "Package": "pillar",
-      "Version": "1.8.1",
+      "Version": "1.9.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "f2316df30902c81729ae9de95ad5a608",
+      "Hash": "15da5a8412f317beeee6175fbc76f4bb",
       "Requirements": [
         "cli",
         "fansi",
@@ -964,6 +976,12 @@
       "Hash": "9df08911be2e031016e2a93e22d9aa60",
       "Requirements": []
     },
+    "pool": {
+      "Package": "pool",
+      "Version": "1.0.1",
+      "Source": "Repository",
+      "Requirements": []
+    },
     "praise": {
       "Package": "praise",
       "Version": "1.0.0",
@@ -1006,10 +1024,10 @@
     },
     "ps": {
       "Package": "ps",
-      "Version": "1.7.2",
+      "Version": "1.7.3",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "68dd03d98a5efd1eb3012436de45ba83",
+      "Hash": "ebaacc87f539b1100e285e9e5d6496ad",
       "Requirements": []
     },
     "purrr": {
@@ -1107,10 +1125,10 @@
     },
     "rlang": {
       "Package": "rlang",
-      "Version": "1.0.6",
+      "Version": "1.1.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "4ed1f8336c8d52c3e750adcdc57228a7",
+      "Hash": "dc079ccd156cde8647360f473c1fa718",
       "Requirements": []
     },
     "rprojroot": {
@@ -1217,10 +1235,10 @@
     },
     "tibble": {
       "Package": "tibble",
-      "Version": "3.1.8",
+      "Version": "3.2.1",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "56b6934ef0f8c68225949a8672fe1a8f",
+      "Hash": "a84e2cc86d07289b3b6f5069df7a004c",
       "Requirements": [
         "fansi",
         "lifecycle",
@@ -1286,6 +1304,16 @@
         "withr"
       ]
     },
+    "torchopt": {
+      "Package": "torchopt",
+      "Version": "0.1.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "43c6504da13fa6df167d87811de128b6",
+      "Requirements": [
+        "torch"
+      ]
+    },
     "triebeard": {
       "Package": "triebeard",
       "Version": "0.3.0",
@@ -1319,18 +1347,18 @@
     },
     "utf8": {
       "Package": "utf8",
-      "Version": "1.2.2",
+      "Version": "1.2.3",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "c9c462b759a5cc844ae25b5942654d13",
+      "Hash": "1fe17157424bb09c48a8b3b550c753bc",
       "Requirements": []
     },
     "vctrs": {
       "Package": "vctrs",
-      "Version": "0.5.1",
+      "Version": "0.6.1",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "970324f6572b4fd81db507b5d4062cb0",
+      "Hash": "06eceb3a5d716fd0654cc23ca3d71a99",
       "Requirements": [
         "cli",
         "glue",
@@ -1403,10 +1431,14 @@
     },
     "zip": {
       "Package": "zip",
-      "Version": "2.2.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "c42bfcec3fa6a0cce17ce1f8bc684f88",
+      "Version": "2.2.2.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "egillax",
+      "RemoteRepo": "zip",
+      "RemoteRef": "miniz_2.1.0",
+      "RemoteSha": "47121f1340c66bddf9489c92b962ee517ca07ddd",
       "Requirements": []
     }
   }
