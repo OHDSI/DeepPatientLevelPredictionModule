@@ -1676,8 +1676,8 @@
       "RemoteUsername": "egillax",
       "RemoteRepo": "zip",
       "RemoteRef": "rename_fn",
-      "RemoteSha": "e99e8cd0d0e75c29800f813bc7366ea2c707b939",
-      "Hash": "9eda442a8a7bb0d87e72597db1c1e2db"
+      "RemoteSha": "f08df1319b517b3d49a832a289a42656d70b4464",
+      "Hash": "b96b93d5c76ad4ecbbc4bfb5770317c6"
     }
   }
 }
