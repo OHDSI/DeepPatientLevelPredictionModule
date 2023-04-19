@@ -38,30 +38,33 @@
     },
     "CohortGenerator": {
       "Package": "CohortGenerator",
-      "Version": "0.7.0",
+      "Version": "0.8.0",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteRepo": "CohortGenerator",
       "RemoteUsername": "ohdsi",
-      "RemoteRef": "v0.7.0",
+      "RemoteRepo": "CohortGenerator",
+      "RemoteRef": "main",
+      "RemoteSha": "30fe75d61cc8414f6021786502410fe7f66a3ac2",
       "Remotes": "ohdsi/CirceR, ohdsi/Eunomia, ohdsi/ROhdsiWebApi",
       "Requirements": [
         "DatabaseConnector",
         "ParallelLogger",
         "R",
+        "R6",
         "RJSONIO",
         "SqlRender",
         "bit64",
         "checkmate",
         "digest",
         "dplyr",
+        "jsonlite",
         "lubridate",
         "readr",
         "rlang",
         "stringi"
       ],
-      "Hash": "1857d2df2bff2acc9ac7e403ef105d8e"
+      "Hash": "2c1b187700cca9e532840e539d9d1bc7"
     },
     "Cyclops": {
       "Package": "Cyclops",
@@ -1180,7 +1183,13 @@
     "ps": {
       "Package": "ps",
       "Version": "1.7.4",
-      "Source": "Repository"
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "utils"
+      ],
+      "Hash": "d88be14c6790aa6fd7b27a2079a45a85"
     },
     "purrr": {
       "Package": "purrr",
