@@ -1156,7 +1156,7 @@
     },
     "processx": {
       "Package": "processx",
-      "Version": "3.8.1",
+      "Version": "3.8.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1165,7 +1165,7 @@
         "ps",
         "utils"
       ],
-      "Hash": "d75b4059d781336efba24021915902b4"
+      "Hash": "a33ee2d9bf07564efb888ad98410da84"
     },
     "progress": {
       "Package": "progress",
