@@ -388,6 +388,17 @@
       ],
       "Hash": "c232938949fcd8126034419cc529333a"
     },
+    "ResultModelManager": {
+      "Package": "ResultModelManager",
+      "Version": "0.4.0",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "ohdsi",
+      "RemoteRepo": "ResultModelManager",
+      "RemoteRef": "main",
+      "RemoteSha": "e513ba2d9bc4dbe6460b2f793628379cecd782ed"
+    },
     "SqlRender": {
       "Package": "SqlRender",
       "Version": "1.14.0",
@@ -1656,7 +1667,9 @@
     "zip": {
       "Package": "zip",
       "Version": "2.3.0",
-      "Source": "Repository"
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "d98c94dacb7e0efcf83b0a133a705504"
     }
   }
 }
