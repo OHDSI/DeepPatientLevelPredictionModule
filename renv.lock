@@ -1179,14 +1179,8 @@
     },
     "ps": {
       "Package": "ps",
-      "Version": "1.7.5",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "utils"
-      ],
-      "Hash": "709d852d33178db54b17c722e5b1e594"
+      "Version": "1.7.4",
+      "Source": "Repository"
     },
     "purrr": {
       "Package": "purrr",
