@@ -1,3 +1,9 @@
+DeepPatientLevelPredictionModule 0.0.7
+=======================
+- Update to work with DeepPLP 1.1.4 and torch 0.10.0
+- Removed torchopt from lock file
+- Added back table prefix
+
 DeepPatientLevelPredictionModule 0.0.6
 =======================
 - Update to work with DeepPLP 1.1.2 and PLP 6.3
