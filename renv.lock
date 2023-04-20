@@ -124,13 +124,13 @@
       "Package": "DeepPatientLevelPrediction",
       "Version": "1.1.4",
       "Source": "GitHub",
-      "Remotes": "ohdsi/PatientLevelPrediction, ohdsi/FeatureExtraction, ohdsi/Eunomia, ohdsi/ResultModelManager",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteRepo": "DeepPatientLevelPrediction",
       "RemoteUsername": "ohdsi",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "935f51d99b37b5c0334467a7f29980e31db7d88f",
+      "RemoteRepo": "DeepPatientLevelPrediction",
+      "RemoteRef": "main",
+      "RemoteSha": "f26382e34c85fd22cf2c1a253efae4c2d6b9c9a3",
+      "Remotes": "ohdsi/PatientLevelPrediction, ohdsi/FeatureExtraction, ohdsi/Eunomia, ohdsi/ResultModelManager",
       "Requirements": [
         "FeatureExtraction",
         "ParallelLogger",
@@ -141,7 +141,7 @@
         "torch",
         "withr"
       ],
-      "Hash": "03267789320bd7a1e10926c29c194678"
+      "Hash": "66f1f6c9432c5f8562445b6e72b34aee"
     },
     "Eunomia": {
       "Package": "Eunomia",
