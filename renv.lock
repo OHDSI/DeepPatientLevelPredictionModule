@@ -1669,15 +1669,15 @@
     },
     "zip": {
       "Package": "zip",
-      "Version": "2.3.0.9000",
+      "Version": "2.2.2.9000",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteRepo": "zip",
       "RemoteUsername": "egillax",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "0b37f4bf3b0bd28255f29f0a3353968116fe99dd",
-      "Hash": "4073e3d2f4ca40c8cce4b70c35a418fc"
+      "RemoteRef": "rename_fn",
+      "RemoteSha": "f08df1319b517b3d49a832a289a42656d70b4464",
+      "Hash": "b96b93d5c76ad4ecbbc4bfb5770317c6"
     }
   }
 }
