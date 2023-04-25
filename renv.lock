@@ -122,15 +122,15 @@
     },
     "DeepPatientLevelPrediction": {
       "Package": "DeepPatientLevelPrediction",
-      "Version": "1.1.4",
+      "Version": "1.1.5",
       "Source": "GitHub",
+      "Remotes": "ohdsi/PatientLevelPrediction, ohdsi/FeatureExtraction, ohdsi/Eunomia, ohdsi/ResultModelManager",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteUsername": "ohdsi",
       "RemoteRepo": "DeepPatientLevelPrediction",
-      "RemoteRef": "main",
-      "RemoteSha": "f26382e34c85fd22cf2c1a253efae4c2d6b9c9a3",
-      "Remotes": "ohdsi/PatientLevelPrediction, ohdsi/FeatureExtraction, ohdsi/Eunomia, ohdsi/ResultModelManager",
+      "RemoteUsername": "ohdsi",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "cfb1bfa3983a96ad214aa4a0dd5e505232773c50",
       "Requirements": [
         "FeatureExtraction",
         "ParallelLogger",
@@ -141,7 +141,7 @@
         "torch",
         "withr"
       ],
-      "Hash": "66f1f6c9432c5f8562445b6e72b34aee"
+      "Hash": "48d5ff11ddae287929a009c7b45e5fca"
     },
     "Eunomia": {
       "Package": "Eunomia",
@@ -1669,15 +1669,15 @@
     },
     "zip": {
       "Package": "zip",
-      "Version": "2.2.2.9000",
+      "Version": "2.3.0.9000",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteUsername": "egillax",
       "RemoteRepo": "zip",
-      "RemoteRef": "rename_fn",
-      "RemoteSha": "f08df1319b517b3d49a832a289a42656d70b4464",
-      "Hash": "b96b93d5c76ad4ecbbc4bfb5770317c6"
+      "RemoteUsername": "egillax",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "0b37f4bf3b0bd28255f29f0a3353968116fe99dd",
+      "Hash": "4073e3d2f4ca40c8cce4b70c35a418fc"
     }
   }
 }
