@@ -2,7 +2,6 @@ DeepPatientLevelPredictionModule 0.0.7
 =======================
  - Update to work with DeepPlp 1.1.5
 
-
 DeepPatientLevelPredictionModule 0.0.7
 =======================
 - Update to work with DeepPLP 1.1.4 and torch 0.10.0
