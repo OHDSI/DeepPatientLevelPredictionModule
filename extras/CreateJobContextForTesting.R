@@ -51,7 +51,7 @@ makeModelDesignSettings <- function(targetId, outcomeId, popSettings, covarSetti
       residualDropout = 0,
       hiddenDropout = 0,
       sizeEmbedding = 32,
-      estimatorSettings = setEstimator(learningRate = 3e-4,
+      estimatorSettings = setEstimator(learningRate = "auto",
                                        weightDecay = 0.0,
                                        device = "cpu",
                                        batchSize = 256,
