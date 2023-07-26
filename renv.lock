@@ -122,26 +122,26 @@
     },
     "DeepPatientLevelPrediction": {
       "Package": "DeepPatientLevelPrediction",
-      "Version": "1.1.5",
+      "Version": "1.1.6.9000",
       "Source": "GitHub",
-      "Remotes": "ohdsi/PatientLevelPrediction, ohdsi/FeatureExtraction, ohdsi/Eunomia, ohdsi/ResultModelManager",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteRepo": "DeepPatientLevelPrediction",
       "RemoteUsername": "ohdsi",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "cfb1bfa3983a96ad214aa4a0dd5e505232773c50",
+      "RemoteRepo": "DeepPatientLevelPrediction",
+      "RemoteRef": "pytorch",
+      "RemoteSha": "e81123e5280975e8a7bc4c2bef04c37df5efa9fb",
+      "Remotes": "ohdsi/PatientLevelPrediction, ohdsi/FeatureExtraction, ohdsi/Eunomia, ohdsi/ResultModelManager",
       "Requirements": [
         "FeatureExtraction",
         "ParallelLogger",
         "PatientLevelPrediction",
         "R",
         "dplyr",
+        "reticulate",
         "rlang",
-        "torch",
         "withr"
       ],
-      "Hash": "48d5ff11ddae287929a009c7b45e5fca"
+      "Hash": "3f9a0bce12593e8aaf0b0323dfa1ee7f"
     },
     "Eunomia": {
       "Package": "Eunomia",
@@ -557,17 +557,6 @@
         "stats"
       ],
       "Hash": "f20c47fd52fae58b4e377c37bb8c335b"
-    },
-    "coro": {
-      "Package": "coro",
-      "Version": "1.0.3",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "rlang"
-      ],
-      "Hash": "c4db619daf22e0a89135496809f509f2"
     },
     "cpp11": {
       "Package": "cpp11",
@@ -1507,31 +1496,6 @@
       ],
       "Hash": "8548b44f79a35ba1791308b61e6012d7"
     },
-    "torch": {
-      "Package": "torch",
-      "Version": "0.10.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R6",
-        "Rcpp",
-        "bit64",
-        "callr",
-        "cli",
-        "coro",
-        "desc",
-        "ellipsis",
-        "glue",
-        "magrittr",
-        "methods",
-        "rlang",
-        "stats",
-        "tools",
-        "utils",
-        "withr"
-      ],
-      "Hash": "dfd30a1119c3274e9648ad3ea56700ac"
-    },
     "triebeard": {
       "Package": "triebeard",
       "Version": "0.4.1",
@@ -1669,15 +1633,15 @@
     },
     "zip": {
       "Package": "zip",
-      "Version": "2.2.2.9000",
+      "Version": "2.3.0.9000",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteRepo": "zip",
-      "RemoteUsername": "egillax",
-      "RemoteRef": "rename_fn",
-      "RemoteSha": "f08df1319b517b3d49a832a289a42656d70b4464",
-      "Hash": "b96b93d5c76ad4ecbbc4bfb5770317c6"
+      "RemoteUsername": "r-lib",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "70f0b1518304652ed04a7e7a991396e923030bb7",
+      "Hash": "322ea75468d779b7c281f685cd764b81"
     }
   }
 }
