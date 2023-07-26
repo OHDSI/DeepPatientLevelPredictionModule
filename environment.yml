@@ -1,4 +1,4 @@
-name: /home/egill/github/DeepPatientLevelPredictionModule/renv/python/condaenvs/renv-python
+name: r-reticulate
 channels:
   - conda-forge
   - defaults
@@ -46,4 +46,4 @@ dependencies:
     - tqdm==4.65.0
     - triton==2.0.0
     - typing-extensions==4.7.1
-prefix: /home/egill/github/DeepPatientLevelPredictionModule/renv/python/condaenvs/renv-python
+prefix: r-reticulate

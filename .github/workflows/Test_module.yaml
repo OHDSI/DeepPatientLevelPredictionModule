@@ -56,6 +56,10 @@ jobs:
           sudo apt-get install -y default-jdk
           sudo apt-get install -y libcurl4-openssl-dev
           sudo apt-get install -y libssl-dev
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: r-reticulate
+          environment-file: environment.yml
 
       - uses: r-lib/actions/setup-renv@v2
         with:
