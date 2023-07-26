@@ -134,7 +134,7 @@
       "RemoteUsername": "ohdsi",
       "RemoteRepo": "DeepPatientLevelPrediction",
       "RemoteRef": "pytorch",
-      "RemoteSha": "5f6aba395c84006aca2991c2042052d06c0286ab",
+      "RemoteSha": "846af437ee2489ffc749aa6c00b541d29225ef25",
       "Remotes": "ohdsi/PatientLevelPrediction, ohdsi/FeatureExtraction, ohdsi/Eunomia, ohdsi/ResultModelManager",
       "Requirements": [
         "FeatureExtraction",
@@ -146,7 +146,7 @@
         "rlang",
         "withr"
       ],
-      "Hash": "83885af9e0bd1bfd45e8c9ecb3fc5e49"
+      "Hash": "3e0e32a7158010a579edbcdcf0249241"
     },
     "Eunomia": {
       "Package": "Eunomia",
@@ -373,6 +373,17 @@
         "Rcpp"
       ],
       "Hash": "c232938949fcd8126034419cc529333a"
+    },
+    "ResultModelManager": {
+      "Package": "ResultModelManager",
+      "Version": "0.4.0",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "ohdsi",
+      "RemoteRepo": "ResultModelManager",
+      "RemoteRef": "main",
+      "RemoteSha": "e513ba2d9bc4dbe6460b2f793628379cecd782ed"
     },
     "SqlRender": {
       "Package": "SqlRender",
