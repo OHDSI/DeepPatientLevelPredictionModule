@@ -55,7 +55,11 @@ makeModelDesignSettings <- function(targetId, outcomeId, popSettings, covarSetti
                                        weightDecay = 0.0,
                                        device = "cpu",
                                        batchSize = 256L,
-                                       epochs = 1L),
+                                       epochs = 1L,
+                                       optimizer = function() torch$optim$AdamW,
+                                       scheduler = list(fun = function() torch$optim$lr_scheduler$ReduceLROnPlateau,
+                                                        params = list(patience=1L)),
+                                       criterion = function() torch$nn$BCEWithLogitsLoss),
       randomSample = 1
     ),
     splitSettings = PatientLevelPrediction::createDefaultSplitSetting(),
