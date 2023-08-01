@@ -1,6 +1,6 @@
 {
   "Name": "DeepPatientLevelPredictionModule",
-  "Version": "0.0.8",
+  "Version": "0.0.8p",
   "Dependencies": ["CohortGeneratorModule"],
   "TablePrefix": "deepPLP"
 }
