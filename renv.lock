@@ -134,19 +134,7 @@
       "RemoteUsername": "ohdsi",
       "RemoteRepo": "DeepPatientLevelPrediction",
       "RemoteRef": "pytorch",
-      "RemoteSha": "846af437ee2489ffc749aa6c00b541d29225ef25",
-      "Remotes": "ohdsi/PatientLevelPrediction, ohdsi/FeatureExtraction, ohdsi/Eunomia, ohdsi/ResultModelManager",
-      "Requirements": [
-        "FeatureExtraction",
-        "ParallelLogger",
-        "PatientLevelPrediction",
-        "R",
-        "dplyr",
-        "reticulate",
-        "rlang",
-        "withr"
-      ],
-      "Hash": "3e0e32a7158010a579edbcdcf0249241"
+      "RemoteSha": "d1af578260d736a9f7a140eae6f9fb264822edf8"
     },
     "Eunomia": {
       "Package": "Eunomia",
