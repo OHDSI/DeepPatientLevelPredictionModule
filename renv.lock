@@ -134,7 +134,19 @@
       "RemoteUsername": "ohdsi",
       "RemoteRepo": "DeepPatientLevelPrediction",
       "RemoteRef": "pytorch",
-      "RemoteSha": "d1af578260d736a9f7a140eae6f9fb264822edf8"
+      "RemoteSha": "5f1a2d418fb065dbb626864d0a9fcaa03aaa891a",
+      "Remotes": "ohdsi/PatientLevelPrediction, ohdsi/FeatureExtraction, ohdsi/Eunomia, ohdsi/ResultModelManager",
+      "Requirements": [
+        "FeatureExtraction",
+        "ParallelLogger",
+        "PatientLevelPrediction",
+        "R",
+        "dplyr",
+        "reticulate",
+        "rlang",
+        "withr"
+      ],
+      "Hash": "0ce09920f82acb8bc87fc1b626320f91"
     },
     "Eunomia": {
       "Package": "Eunomia",
@@ -155,14 +167,14 @@
     },
     "FeatureExtraction": {
       "Package": "FeatureExtraction",
-      "Version": "3.2.0",
+      "Version": "3.3.0",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteUsername": "ohdsi",
       "RemoteRepo": "FeatureExtraction",
       "RemoteRef": "main",
-      "RemoteSha": "5363f5f4cdaf8b31ce9f193861169047b11ea41c",
+      "RemoteSha": "f6bf1cb5d14f45c242b368ea24f94bb8ae70ff50",
       "Remotes": "ohdsi/Eunomia",
       "Requirements": [
         "Andromeda",
@@ -172,6 +184,7 @@
         "R",
         "RSQLite",
         "SqlRender",
+        "checkmate",
         "cli",
         "dplyr",
         "jsonlite",
@@ -181,7 +194,7 @@
         "readr",
         "rlang"
       ],
-      "Hash": "cbb5d4702b83fa3a712377d6d4745fc8"
+      "Hash": "117e99ad371057536d22afd876081081"
     },
     "MASS": {
       "Package": "MASS",
@@ -361,17 +374,6 @@
         "Rcpp"
       ],
       "Hash": "c232938949fcd8126034419cc529333a"
-    },
-    "ResultModelManager": {
-      "Package": "ResultModelManager",
-      "Version": "0.4.0",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "ohdsi",
-      "RemoteRepo": "ResultModelManager",
-      "RemoteRef": "main",
-      "RemoteSha": "e513ba2d9bc4dbe6460b2f793628379cecd782ed"
     },
     "SqlRender": {
       "Package": "SqlRender",
@@ -1148,7 +1150,12 @@
     "renv": {
       "Package": "renv",
       "Version": "1.0.0",
-      "Source": "Repository"
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "utils"
+      ],
+      "Hash": "c321cd99d56443dbffd1c9e673c0c1a2"
     },
     "reticulate": {
       "Package": "reticulate",
