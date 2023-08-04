@@ -375,6 +375,17 @@
       ],
       "Hash": "c232938949fcd8126034419cc529333a"
     },
+    "ResultModelManager": {
+      "Package": "ResultModelManager",
+      "Version": "0.4.0",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "ohdsi",
+      "RemoteRepo": "ResultModelManager",
+      "RemoteRef": "main",
+      "RemoteSha": "e513ba2d9bc4dbe6460b2f793628379cecd782ed"
+    },
     "SqlRender": {
       "Package": "SqlRender",
       "Version": "1.14.0",
