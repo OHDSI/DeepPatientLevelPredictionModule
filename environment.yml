@@ -3,8 +3,8 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - pip=23.2.1
-  - python=3.10.12
+  - pip=23.2.1=pyhd8ed1ab_0
+  - python=3.10.12=hd12c33a_0_cpython
   - pip:
     - connectorx==0.3.1
     - polars==0.18.8
