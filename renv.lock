@@ -104,9 +104,14 @@
     },
     "DatabaseConnector": {
       "Package": "DatabaseConnector",
-      "Version": "6.2.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
+      "Version": "6.2.3",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "ohdsi",
+      "RemoteRepo": "DatabaseConnector",
+      "RemoteRef": "main",
+      "RemoteSha": "cb0d9a0426c66e00c404ae79364e7d4542ef6be2",
       "Requirements": [
         "DBI",
         "R",
@@ -123,7 +128,7 @@
         "urltools",
         "utils"
       ],
-      "Hash": "20e029282c9ac90e4d71018feb507aff"
+      "Hash": "9fe7426b2e77e13e4d37491286ceed99"
     },
     "DeepPatientLevelPrediction": {
       "Package": "DeepPatientLevelPrediction",
@@ -236,14 +241,14 @@
     },
     "ParallelLogger": {
       "Package": "ParallelLogger",
-      "Version": "3.1.0",
+      "Version": "3.2.0",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteRepo": "ParallelLogger",
       "RemoteUsername": "ohdsi",
+      "RemoteRepo": "ParallelLogger",
       "RemoteRef": "main",
-      "RemoteSha": "e1ef69e217f60d0cd53ed23815fd9b9fa74aba4a",
+      "RemoteSha": "a239b8f0295f4159c9c3632fa927b6f7c9f508c4",
       "Requirements": [
         "R",
         "jsonlite",
@@ -252,18 +257,18 @@
         "utils",
         "xml2"
       ],
-      "Hash": "e5d5eeeb036cbbea4f63e15caeeadf2f"
+      "Hash": "4c785a60c20e0a1a042234b40486d3b6"
     },
     "PatientLevelPrediction": {
       "Package": "PatientLevelPrediction",
-      "Version": "6.3.3",
+      "Version": "6.3.4",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteUsername": "ohdsi",
       "RemoteRepo": "PatientLevelPrediction",
       "RemoteRef": "main",
-      "RemoteSha": "f5942b654422c67518e36a9f1a1be8ca8cabd1b6",
+      "RemoteSha": "f6bda233eae96bae81b5745b46879c685d278e36",
       "Remotes": "ohdsi/BigKnn, ohdsi/Eunomia, ohdsi/FeatureExtraction, ohdsi/IterativeHardThresholding, ohdsi/ParallelLogger, ohdsi/ShinyAppBuilder, ohdsi/ResultModelManager",
       "Requirements": [
         "Andromeda",
@@ -289,7 +294,7 @@
         "tidyr",
         "utils"
       ],
-      "Hash": "29b301ac836bcca833ab3e174ccc1df7"
+      "Hash": "4b127d5755bd7fbff8e8a22d0c9e30cd"
     },
     "R6": {
       "Package": "R6",
@@ -388,7 +393,7 @@
     },
     "SqlRender": {
       "Package": "SqlRender",
-      "Version": "1.14.0",
+      "Version": "1.15.2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -396,7 +401,7 @@
         "rJava",
         "rlang"
       ],
-      "Hash": "9bc9e33cbab6a5f99bcee12c4ce4b7c9"
+      "Hash": "a224990dff017dcc9448ab22eb587d7b"
     },
     "backports": {
       "Package": "backports",
@@ -1160,17 +1165,17 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "1.0.0",
+      "Version": "1.0.2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "utils"
       ],
-      "Hash": "c321cd99d56443dbffd1c9e673c0c1a2"
+      "Hash": "4b22ac016fe54028b88d0c68badbd061"
     },
     "reticulate": {
       "Package": "reticulate",
-      "Version": "1.28",
+      "Version": "1.31",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1184,10 +1189,11 @@
         "methods",
         "png",
         "rappdirs",
+        "rlang",
         "utils",
         "withr"
       ],
-      "Hash": "86c441bf33e1d608db773cb94b848458"
+      "Hash": "5e2f71b7ccd5c060ad439a4824b4288c"
     },
     "rlang": {
       "Package": "rlang",
