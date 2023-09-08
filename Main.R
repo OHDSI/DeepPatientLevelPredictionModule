@@ -60,6 +60,40 @@ createCohortDefinitionSetFromJobContext <- function(sharedResources, settings) {
   return(cohortDefinitionSet)
 }
 
+setCovariateSchemaTable <- function(
+    modelDesignList, 
+    cohortDatabaseSchema,
+    cohortTable
+){
+  
+  if(inherits(modelDesignList, 'modelDesign')){
+    modelDesignList <- list(modelDesignList)
+  }
+  
+  for(i in 1:length(modelDesignList)){
+    covariateSettings <- modelDesignList[[i]]$covariateSettings
+    
+    if(inherits(covariateSettings, 'covariateSettings')){
+      covariateSettings <- list(covariateSettings)
+    }
+    
+    for(j in 1:length(covariateSettings)){
+      
+      if('cohortDatabaseSchema' %in% names(covariateSettings[[j]])){
+        covariateSettings[[j]]$cohortDatabaseSchema <- cohortDatabaseSchema
+      }
+      if('cohortTable' %in% names(covariateSettings[[j]])){
+        covariateSettings[[j]]$cohortTable <- cohortTable
+      }
+      
+    }
+    
+    modelDesignList[[i]]$covariateSettings <- covariateSettings
+  }
+  
+  return(modelDesignList)
+}
+
 # Module methods -------------------------
 execute <- function(jobContext) {
   library(DeepPatientLevelPrediction)
@@ -79,7 +113,7 @@ execute <- function(jobContext) {
   workFolder <- jobContext$moduleExecutionSettings$workSubFolder
   resultsFolder <- jobContext$moduleExecutionSettings$resultsSubFolder
 
-  rlang::inform("Executing PLP")
+  rlang::inform("Executing deepPLP")
   moduleInfo <- getModuleInfo()
 
   # Creating database details
@@ -100,7 +134,14 @@ execute <- function(jobContext) {
     sharedResources = jobContext$sharedResources,
     settings = jobContext$settings
   )
-
+  
+  # set the covariate settings schema and tables 
+  jobContext$settings <- setCovariateSchemaTable(
+    modelDesignList = jobContext$settings, 
+    cohortDatabaseSchema = jobContext$moduleExecutionSettings$workDatabaseSchema,
+    cohortTable = jobContext$moduleExecutionSettings$cohortTableNames$cohortTable
+  )
+  
   # run the models
   PatientLevelPrediction::runMultiplePlp(
     databaseDetails = databaseDetails,
@@ -128,11 +169,48 @@ execute <- function(jobContext) {
     csvFolder = file.path(workFolder, "results"),
     fileAppend = NULL
   )
-
-  # Zip the results
-  rlang::inform("Zipping csv files")
-  DatabaseConnector::createZipFile(
-    zipFile = file.path(resultsFolder, "results.zip"),
-    files = file.path(workFolder, "results")
-  )
 }
+
+uploadResultsCallback <- function(jobContext) {
+  connectionDetails <- jobContext$moduleExecutionSettings$resultsConnectionDetails
+  moduleInfo <- ParallelLogger::loadSettingsFromJson("MetaData.json")
+  tablePrefix <- moduleInfo$TablePrefix
+  schema <- jobContext$moduleExecutionSettings$resultsDatabaseSchema
+  
+  resultsFolder <- jobContext$moduleExecutionSettings$resultsSubFolder
+  
+  conn <- DatabaseConnector::connect(connectionDetails)
+  on.exit(DatabaseConnector::disconnect(conn))
+  
+  databaseSchemaSettings <- PatientLevelPrediction::createDatabaseSchemaSettings(
+    resultSchema = schema, 
+    tablePrefix = tablePrefix, 
+    targetDialect = connectionDetails$dbms
+  )
+  
+  PatientLevelPrediction::insertCsvToDatabase(
+    csvFolder = resultsFolder,
+    conn = conn, 
+    databaseSchemaSettings = databaseSchemaSettings,
+    modelSaveLocation = file.path(resultsFolder, 'dbmodels'),
+    csvTableAppend = ''
+  )
+  
+}
+
+createDataModelSchema <- function(jobContext) {
+  connectionDetails <- jobContext$moduleExecutionSettings$resultsConnectionDetails
+  moduleInfo <- ParallelLogger::loadSettingsFromJson("MetaData.json")
+  tablePrefix <- moduleInfo$TablePrefix
+  schema <- jobContext$moduleExecutionSettings$resultsDatabaseSchema
+  
+  PatientLevelPrediction::createPlpResultTables(
+      connectionDetails = connectionDetails, 
+        targetDialect = connectionDetails$dbms, 
+        resultSchema = schema, 
+        deleteTables = F,
+        createTables = T, 
+        tablePrefix = tablePrefix
+      )
+}
+
