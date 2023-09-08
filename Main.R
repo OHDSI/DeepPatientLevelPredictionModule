@@ -166,7 +166,7 @@ execute <- function(jobContext) {
       targetDialect = "sqlite",
       tempEmulationSchema = NULL
     ),
-    csvFolder = file.path(workFolder, "results"),
+    csvFolder = file.path(resultsFolder),
     fileAppend = NULL
   )
 }

@@ -139,19 +139,7 @@
       "RemoteUsername": "ohdsi",
       "RemoteRepo": "DeepPatientLevelPrediction",
       "RemoteRef": "v2.0.0",
-      "RemoteSha": "b353e411d8bd225094d301c96bccbfe8fe1de33a",
-      "Remotes": "ohdsi/PatientLevelPrediction@develop, ohdsi/FeatureExtraction, ohdsi/Eunomia, ohdsi/ResultModelManager",
-      "Requirements": [
-        "FeatureExtraction",
-        "ParallelLogger",
-        "PatientLevelPrediction",
-        "R",
-        "dplyr",
-        "reticulate",
-        "rlang",
-        "withr"
-      ],
-      "Hash": "2b8c8ce15208b31957c4b506a817d6d2"
+      "RemoteSha": "80f94e1072642ce096274bd55d63ff9c94ac466c"
     },
     "Eunomia": {
       "Package": "Eunomia",
@@ -380,6 +368,17 @@
         "Rcpp"
       ],
       "Hash": "c232938949fcd8126034419cc529333a"
+    },
+    "ResultModelManager": {
+      "Package": "ResultModelManager",
+      "Version": "0.4.0",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "ohdsi",
+      "RemoteRepo": "ResultModelManager",
+      "RemoteRef": "main",
+      "RemoteSha": "e513ba2d9bc4dbe6460b2f793628379cecd782ed"
     },
     "SqlRender": {
       "Package": "SqlRender",

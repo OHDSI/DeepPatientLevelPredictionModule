@@ -109,7 +109,7 @@ executionSettings <- Strategus::createCdmExecutionSettings(
 )
 
 # Job Context ----------------------------
-module <- "CohortGeneratorModule"
+module <- "DeepPatientLevelPredictionModule"
 moduleIndex <- 1
 moduleExecutionSettings <- executionSettings
 moduleExecutionSettings$workSubFolder <- "dummy"
