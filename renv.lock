@@ -8,6 +8,11 @@
       }
     ]
   },
+  "Python": {
+    "Version": "3.10.12",
+    "Type": "conda",
+    "Name": "./renv/python/condaenvs/renv-python"
+  },
   "Packages": {
     "Andromeda": {
       "Package": "Andromeda",
@@ -99,9 +104,14 @@
     },
     "DatabaseConnector": {
       "Package": "DatabaseConnector",
-      "Version": "6.2.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
+      "Version": "6.2.3",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "ohdsi",
+      "RemoteRepo": "DatabaseConnector",
+      "RemoteRef": "main",
+      "RemoteSha": "cb0d9a0426c66e00c404ae79364e7d4542ef6be2",
       "Requirements": [
         "DBI",
         "R",
@@ -118,30 +128,18 @@
         "urltools",
         "utils"
       ],
-      "Hash": "20e029282c9ac90e4d71018feb507aff"
+      "Hash": "9fe7426b2e77e13e4d37491286ceed99"
     },
     "DeepPatientLevelPrediction": {
       "Package": "DeepPatientLevelPrediction",
-      "Version": "1.1.5",
+      "Version": "2.0.0",
       "Source": "GitHub",
-      "Remotes": "ohdsi/PatientLevelPrediction, ohdsi/FeatureExtraction, ohdsi/Eunomia, ohdsi/ResultModelManager",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteRepo": "DeepPatientLevelPrediction",
       "RemoteUsername": "ohdsi",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "cfb1bfa3983a96ad214aa4a0dd5e505232773c50",
-      "Requirements": [
-        "FeatureExtraction",
-        "ParallelLogger",
-        "PatientLevelPrediction",
-        "R",
-        "dplyr",
-        "rlang",
-        "torch",
-        "withr"
-      ],
-      "Hash": "48d5ff11ddae287929a009c7b45e5fca"
+      "RemoteRepo": "DeepPatientLevelPrediction",
+      "RemoteRef": "v2.0.0",
+      "RemoteSha": "80f94e1072642ce096274bd55d63ff9c94ac466c"
     },
     "Eunomia": {
       "Package": "Eunomia",
@@ -162,14 +160,14 @@
     },
     "FeatureExtraction": {
       "Package": "FeatureExtraction",
-      "Version": "3.2.0",
+      "Version": "3.3.0",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteUsername": "ohdsi",
       "RemoteRepo": "FeatureExtraction",
       "RemoteRef": "main",
-      "RemoteSha": "5363f5f4cdaf8b31ce9f193861169047b11ea41c",
+      "RemoteSha": "e4685e0164471b94c5d3f4205563059097b9e8ac",
       "Remotes": "ohdsi/Eunomia",
       "Requirements": [
         "Andromeda",
@@ -179,6 +177,7 @@
         "R",
         "RSQLite",
         "SqlRender",
+        "checkmate",
         "cli",
         "dplyr",
         "jsonlite",
@@ -188,7 +187,7 @@
         "readr",
         "rlang"
       ],
-      "Hash": "cbb5d4702b83fa3a712377d6d4745fc8"
+      "Hash": "0f839f533ed9c8f1c2f91a0f7399c456"
     },
     "MASS": {
       "Package": "MASS",
@@ -207,11 +206,12 @@
     },
     "Matrix": {
       "Package": "Matrix",
-      "Version": "1.5-4",
+      "Version": "1.6-0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R",
+        "grDevices",
         "graphics",
         "grid",
         "lattice",
@@ -219,28 +219,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "e779c7d9f35cc364438578f334cffee2"
-    },
-    "OhdsiRTools": {
-      "Package": "OhdsiRTools",
-      "Version": "2.0.2",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "OhdsiRTools",
-      "RemoteUsername": "ohdsi",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "e076a286dfb9ae925606b85747432f237e19c942",
-      "Requirements": [
-        "RJSONIO",
-        "codetools",
-        "formatR",
-        "httr",
-        "methods",
-        "remotes",
-        "utils"
-      ],
-      "Hash": "82bda80414068756d66c47bab90a70ec"
+      "Hash": "31262fd18481fab05c5e7258dac163ca"
     },
     "PRROC": {
       "Package": "PRROC",
@@ -251,14 +230,14 @@
     },
     "ParallelLogger": {
       "Package": "ParallelLogger",
-      "Version": "3.1.0",
+      "Version": "3.3.0",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteRepo": "ParallelLogger",
       "RemoteUsername": "ohdsi",
-      "RemoteRef": "main",
-      "RemoteSha": "e1ef69e217f60d0cd53ed23815fd9b9fa74aba4a",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "f875565f778414df7c0e4fbcaf38f34a1c36fa28",
       "Requirements": [
         "R",
         "jsonlite",
@@ -267,20 +246,19 @@
         "utils",
         "xml2"
       ],
-      "Hash": "e5d5eeeb036cbbea4f63e15caeeadf2f"
+      "Hash": "64b88278107424ea011e310a9b5b83e5"
     },
     "PatientLevelPrediction": {
       "Package": "PatientLevelPrediction",
-      "Version": "6.3.1",
+      "Version": "6.3.5.9000",
       "Source": "GitHub",
       "RemoteType": "github",
-      "Remotes": "ohdsi/BigKnn, ohdsi/Eunomia, ohdsi/FeatureExtraction, ohdsi/IterativeHardThresholding, ohdsi/ShinyAppBuilder, ohdsi/ResultModelManager",
       "RemoteHost": "api.github.com",
-      "RemoteRepo": "PatientLevelPrediction",
       "RemoteUsername": "ohdsi",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "66d3cf12602ee7d381f7c66c56457a7b9bf9b878",
-      "Remotes": "ohdsi/BigKnn, ohdsi/Eunomia, ohdsi/FeatureExtraction, ohdsi/IterativeHardThresholding, ohdsi/ShinyAppBuilder, ohdsi/ResultModelManager",
+      "RemoteRepo": "PatientLevelPrediction",
+      "RemoteRef": "develop",
+      "RemoteSha": "bf871cc2780774a7d7727f6871180326750b5251",
+      "Remotes": "ohdsi/BigKnn, ohdsi/Eunomia, ohdsi/FeatureExtraction, ohdsi/IterativeHardThresholding, ohdsi/ParallelLogger, ohdsi/ShinyAppBuilder, ohdsi/ResultModelManager",
       "Requirements": [
         "Andromeda",
         "Cyclops",
@@ -305,7 +283,7 @@
         "tidyr",
         "utils"
       ],
-      "Hash": "c71162649f55b83ae5434c1d80680b78"
+      "Hash": "8acb91e4b1752659d4e074643b869399"
     },
     "R6": {
       "Package": "R6",
@@ -357,14 +335,14 @@
     },
     "Rcpp": {
       "Package": "Rcpp",
-      "Version": "1.0.10",
+      "Version": "1.0.11",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "methods",
         "utils"
       ],
-      "Hash": "e749cae40fa9ef469b6050959517453c"
+      "Hash": "ae6cbbe1492f4de79c45fce06f967ce8"
     },
     "RcppEigen": {
       "Package": "RcppEigen",
@@ -404,7 +382,7 @@
     },
     "SqlRender": {
       "Package": "SqlRender",
-      "Version": "1.14.0",
+      "Version": "1.15.2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -412,17 +390,7 @@
         "rJava",
         "rlang"
       ],
-      "Hash": "9bc9e33cbab6a5f99bcee12c4ce4b7c9"
-    },
-    "askpass": {
-      "Package": "askpass",
-      "Version": "1.1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "sys"
-      ],
-      "Hash": "e8a22846fff485f0be3770c2da758713"
+      "Hash": "a224990dff017dcc9448ab22eb587d7b"
     },
     "backports": {
       "Package": "backports",
@@ -534,16 +502,6 @@
       ],
       "Hash": "3f038e5ac7f41d4ac41ce658c85e3042"
     },
-    "codetools": {
-      "Package": "codetools",
-      "Version": "0.2-19",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R"
-      ],
-      "Hash": "c089a619a7fae175d149d89164f8c7d8"
-    },
     "colorspace": {
       "Package": "colorspace",
       "Version": "2.1-0",
@@ -557,17 +515,6 @@
         "stats"
       ],
       "Hash": "f20c47fd52fae58b4e377c37bb8c335b"
-    },
-    "coro": {
-      "Package": "coro",
-      "Version": "1.0.3",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "rlang"
-      ],
-      "Hash": "c4db619daf22e0a89135496809f509f2"
     },
     "cpp11": {
       "Package": "cpp11",
@@ -587,16 +534,6 @@
         "utils"
       ],
       "Hash": "e8a1e41acf02548751f45c718d55aa6a"
-    },
-    "curl": {
-      "Package": "curl",
-      "Version": "5.0.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R"
-      ],
-      "Hash": "e4f97056611e8e6b8b852d13b7400cf1"
     },
     "dbplyr": {
       "Package": "dbplyr",
@@ -668,7 +605,7 @@
     },
     "dplyr": {
       "Package": "dplyr",
-      "Version": "1.1.1",
+      "Version": "1.1.3",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -687,7 +624,7 @@
         "utils",
         "vctrs"
       ],
-      "Hash": "eb5742d256a0d9306d85ea68756d8187"
+      "Hash": "e85ffbebaad5f70e1a2e2ef4302b4949"
     },
     "ellipsis": {
       "Package": "ellipsis",
@@ -736,16 +673,6 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "f7736a18de97dea803bde0a2daaafb27"
-    },
-    "formatR": {
-      "Package": "formatR",
-      "Version": "1.14",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R"
-      ],
-      "Hash": "63cb26d12517c7863f5abb006c5e0f25"
     },
     "fs": {
       "Package": "fs",
@@ -858,21 +785,6 @@
       ],
       "Hash": "b59377caa7ed00fa41808342002138f9"
     },
-    "httr": {
-      "Package": "httr",
-      "Version": "1.4.5",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "R6",
-        "curl",
-        "jsonlite",
-        "mime",
-        "openssl"
-      ],
-      "Hash": "f6844033201269bec3ca0097bc6c97b3"
-    },
     "isoband": {
       "Package": "isoband",
       "Version": "0.2.7",
@@ -886,13 +798,13 @@
     },
     "jsonlite": {
       "Package": "jsonlite",
-      "Version": "1.8.4",
+      "Version": "1.8.7",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "methods"
       ],
-      "Hash": "a4269a09a9b865579b2635c77e572374"
+      "Hash": "266a20443ca13c65688b2116d5220f76"
     },
     "labeling": {
       "Package": "labeling",
@@ -996,16 +908,6 @@
       ],
       "Hash": "3460beba7ccc8946249ba35327ba902a"
     },
-    "mime": {
-      "Package": "mime",
-      "Version": "0.12",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "tools"
-      ],
-      "Hash": "18e9c28c1d3ca1560ce30658b22ce104"
-    },
     "munsell": {
       "Package": "munsell",
       "Version": "0.5.0",
@@ -1030,16 +932,6 @@
         "utils"
       ],
       "Hash": "0984ce8da8da9ead8643c5cbbb60f83e"
-    },
-    "openssl": {
-      "Package": "openssl",
-      "Version": "2.0.6",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "askpass"
-      ],
-      "Hash": "0f7cd2962e3044bb940cca4f4b5cecbe"
     },
     "pROC": {
       "Package": "pROC",
@@ -1260,33 +1152,19 @@
       ],
       "Hash": "76c9e04c712a05848ae7a23d2f170a40"
     },
-    "remotes": {
-      "Package": "remotes",
-      "Version": "2.4.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "methods",
-        "stats",
-        "tools",
-        "utils"
-      ],
-      "Hash": "227045be9aee47e6dda9bb38ac870d67"
-    },
     "renv": {
       "Package": "renv",
-      "Version": "0.17.3",
+      "Version": "1.0.2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "utils"
       ],
-      "Hash": "4543b8cd233ae25c6aba8548be9e747e"
+      "Hash": "4b22ac016fe54028b88d0c68badbd061"
     },
     "reticulate": {
       "Package": "reticulate",
-      "Version": "1.28",
+      "Version": "1.31",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1300,21 +1178,22 @@
         "methods",
         "png",
         "rappdirs",
+        "rlang",
         "utils",
         "withr"
       ],
-      "Hash": "86c441bf33e1d608db773cb94b848458"
+      "Hash": "5e2f71b7ccd5c060ad439a4824b4288c"
     },
     "rlang": {
       "Package": "rlang",
-      "Version": "1.1.0",
+      "Version": "1.1.1",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R",
         "utils"
       ],
-      "Hash": "dc079ccd156cde8647360f473c1fa718"
+      "Hash": "a85c767b55f0bf9b7ad16c6d7baee5bb"
     },
     "rprojroot": {
       "Package": "rprojroot",
@@ -1400,13 +1279,6 @@
         "utils"
       ],
       "Hash": "d683341b1fa2e8d817efde27d6e6d35b"
-    },
-    "sys": {
-      "Package": "sys",
-      "Version": "3.4.1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "34c16f1ef796057bfa06d3f4ff818a5d"
     },
     "testthat": {
       "Package": "testthat",
@@ -1507,31 +1379,6 @@
       ],
       "Hash": "8548b44f79a35ba1791308b61e6012d7"
     },
-    "torch": {
-      "Package": "torch",
-      "Version": "0.10.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R6",
-        "Rcpp",
-        "bit64",
-        "callr",
-        "cli",
-        "coro",
-        "desc",
-        "ellipsis",
-        "glue",
-        "magrittr",
-        "methods",
-        "rlang",
-        "stats",
-        "tools",
-        "utils",
-        "withr"
-      ],
-      "Hash": "dfd30a1119c3274e9648ad3ea56700ac"
-    },
     "triebeard": {
       "Package": "triebeard",
       "Version": "0.4.1",
@@ -1578,7 +1425,7 @@
     },
     "vctrs": {
       "Package": "vctrs",
-      "Version": "0.6.1",
+      "Version": "0.6.3",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1588,7 +1435,7 @@
         "lifecycle",
         "rlang"
       ],
-      "Hash": "06eceb3a5d716fd0654cc23ca3d71a99"
+      "Hash": "d0ef2856b83dc33ea6e255caf6229ee2"
     },
     "viridisLite": {
       "Package": "viridisLite",
@@ -1669,15 +1516,15 @@
     },
     "zip": {
       "Package": "zip",
-      "Version": "2.2.2.9000",
+      "Version": "2.3.0.9000",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteRepo": "zip",
-      "RemoteUsername": "egillax",
-      "RemoteRef": "rename_fn",
-      "RemoteSha": "f08df1319b517b3d49a832a289a42656d70b4464",
-      "Hash": "b96b93d5c76ad4ecbbc4bfb5770317c6"
+      "RemoteUsername": "r-lib",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "70f0b1518304652ed04a7e7a991396e923030bb7",
+      "Hash": "322ea75468d779b7c281f685cd764b81"
     }
   }
 }

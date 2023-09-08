@@ -1,0 +1,15 @@
+name: /home/egill/github/DeepPatientLevelPredictionModule/renv/python/condaenvs/renv-python
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip=23.2.1
+  - python=3.10.12
+  - pip:
+    - connectorx==0.3.1
+    - polars==0.19.2
+    - pyarrow==13.0.0
+    - scikit-learn==1.3.0
+    - torch==2.0.1
+    - tqdm==4.65.0
+prefix: /home/egill/github/DeepPatientLevelPredictionModule/renv/python/condaenvs/renv-python
