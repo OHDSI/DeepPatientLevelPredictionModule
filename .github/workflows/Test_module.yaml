@@ -61,7 +61,7 @@ jobs:
       - uses: conda-incubator/setup-miniconda@v2
       
       - name: Setup upterm session
-        uses: fawazahmed0/action-debug
+        uses: fawazahmed0/action-debug@main
 
       - uses: r-lib/actions/setup-renv@v2
         with:
