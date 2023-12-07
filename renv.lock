@@ -132,14 +132,14 @@
     },
     "DeepPatientLevelPrediction": {
       "Package": "DeepPatientLevelPrediction",
-      "Version": "2.0.1",
+      "Version": "2.0.2",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteUsername": "ohdsi",
       "RemoteRepo": "DeepPatientLevelPrediction",
-      "RemoteRef": "main",
-      "RemoteSha": "8942e11c4fb36dadb5ad0e8e8018347a317ccc0d"
+      "RemoteRef": "v2.0.2",
+      "RemoteSha": "f3340d9645f0ee90a69d28348f9e56636c5cb56a"
     },
     "Eunomia": {
       "Package": "Eunomia",
