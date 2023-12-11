@@ -62,6 +62,10 @@ jobs:
           sudo apt-get install -y libglpk-dev
           
       - uses: conda-incubator/setup-miniconda@v2
+      
+      - name: Setup Java for R
+        run: |
+          sudo R CMD javareconf
 
       - uses: r-lib/actions/setup-renv@v2
         with:
