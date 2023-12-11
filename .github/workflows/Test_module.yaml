@@ -64,8 +64,9 @@ jobs:
       - uses: conda-incubator/setup-miniconda@v2
       
       - name: Setup Java for R
+        if: runner.os != "Windows"
         run: |
-          R CMD javareconf
+          sudo R CMD javareconf
 
       - uses: r-lib/actions/setup-renv@v2
         with:
