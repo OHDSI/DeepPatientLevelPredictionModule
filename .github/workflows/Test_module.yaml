@@ -65,7 +65,7 @@ jobs:
       
       - name: Setup Java for R
         run: |
-          sudo R CMD javareconf
+          R CMD javareconf
 
       - uses: r-lib/actions/setup-renv@v2
         with:
