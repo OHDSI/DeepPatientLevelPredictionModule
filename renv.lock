@@ -1016,6 +1016,11 @@
       ],
       "Hash": "0246363e45df2deb6fa484cbc009dc4e"
     },
+    "pool": {
+      "Package": "pool",
+      "Version": "1.0.1",
+      "Source": "Repository"
+    },
     "praise": {
       "Package": "praise",
       "Version": "1.0.0",
