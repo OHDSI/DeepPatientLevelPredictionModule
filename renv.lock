@@ -5,6 +5,10 @@
       {
         "Name": "CRAN",
         "URL": "https://packagemanager.posit.co/cran/latest"
+      },
+      {
+        "Name": "RJAVA",
+        "URL": "https://cloud.r-project.org/"
       }
     ]
   },
@@ -1016,6 +1020,11 @@
       ],
       "Hash": "0246363e45df2deb6fa484cbc009dc4e"
     },
+    "pool": {
+      "Package": "pool",
+      "Version": "1.0.1",
+      "Source": "Repository"
+    },
     "praise": {
       "Package": "praise",
       "Version": "1.0.0",
@@ -1084,9 +1093,9 @@
     },
     "rJava": {
       "Package": "rJava",
-      "Version": "1.0-10",
+      "Version": "1.0-6",
       "Source": "Repository",
-      "Repository": "CRAN"
+      "Repository": "RJAVA"
     },
     "rappdirs": {
       "Package": "rappdirs",
