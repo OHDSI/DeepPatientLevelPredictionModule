@@ -681,28 +681,8 @@
     },
     "ggplot2": {
       "Package": "ggplot2",
-      "Version": "3.4.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "MASS",
-        "R",
-        "cli",
-        "glue",
-        "grDevices",
-        "grid",
-        "gtable",
-        "isoband",
-        "lifecycle",
-        "mgcv",
-        "rlang",
-        "scales",
-        "stats",
-        "tibble",
-        "vctrs",
-        "withr"
-      ],
-      "Hash": "3a147ee02e85a8941aad9909f1b43b7b"
+      "Version": "3.4.3",
+      "Source": "Repository"
     },
     "glue": {
       "Package": "glue",
