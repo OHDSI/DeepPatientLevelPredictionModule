@@ -108,31 +108,8 @@
     },
     "DatabaseConnector": {
       "Package": "DatabaseConnector",
-      "Version": "6.2.3",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "ohdsi",
-      "RemoteRepo": "DatabaseConnector",
-      "RemoteRef": "main",
-      "RemoteSha": "cb0d9a0426c66e00c404ae79364e7d4542ef6be2",
-      "Requirements": [
-        "DBI",
-        "R",
-        "SqlRender",
-        "bit64",
-        "checkmate",
-        "dbplyr",
-        "digest",
-        "methods",
-        "rJava",
-        "readr",
-        "rlang",
-        "stringr",
-        "urltools",
-        "utils"
-      ],
-      "Hash": "9fe7426b2e77e13e4d37491286ceed99"
+      "Version": "6.3.2",
+      "Source": "Repository"
     },
     "DeepPatientLevelPrediction": {
       "Package": "DeepPatientLevelPrediction",
@@ -140,10 +117,10 @@
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteUsername": "OHDSI",
+      "RemoteUsername": "ohdsi",
       "RemoteRepo": "DeepPatientLevelPrediction",
       "RemoteRef": "develop",
-      "RemoteSha": "cff33632892d3216b749a38c6abab5238e6465d1"
+      "RemoteSha": "7f668e70f823c4f774a5428d1f4be445e42bffe5"
     },
     "Eunomia": {
       "Package": "Eunomia",
@@ -360,15 +337,8 @@
     },
     "SqlRender": {
       "Package": "SqlRender",
-      "Version": "1.15.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "checkmate",
-        "rJava",
-        "rlang"
-      ],
-      "Hash": "a224990dff017dcc9448ab22eb587d7b"
+      "Version": "1.17.0",
+      "Source": "Repository"
     },
     "backports": {
       "Package": "backports",

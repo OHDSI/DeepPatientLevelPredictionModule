@@ -10,3 +10,4 @@ dependencies:
     - pyarrow==13.0.0
     - torch==2.3
     - tqdm==4.66.2
+    - pynvml==11.5.0
