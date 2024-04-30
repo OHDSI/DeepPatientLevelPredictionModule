@@ -61,7 +61,7 @@ jobs:
           sudo apt-get install -y libssl-dev
           sudo apt-get install -y libglpk-dev
           
-      - uses: conda-incubator/setup-miniconda@v2
+      - uses: conda-incubator/setup-miniconda@v3
       
       - name: Setup Java for R
         if: runner.os != 'Windows'
