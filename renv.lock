@@ -8,7 +8,7 @@
       },
       {
         "Name": "RJAVA",
-        "URL": "https://cloud.r-project.org/"
+        "URL": "https://cloud.r-project.org"
       }
     ]
   },
@@ -136,14 +136,14 @@
     },
     "DeepPatientLevelPrediction": {
       "Package": "DeepPatientLevelPrediction",
-      "Version": "2.0.2",
+      "Version": "2.0.3.9999",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteUsername": "ohdsi",
+      "RemoteUsername": "OHDSI",
       "RemoteRepo": "DeepPatientLevelPrediction",
-      "RemoteRef": "v2.0.2",
-      "RemoteSha": "f3340d9645f0ee90a69d28348f9e56636c5cb56a"
+      "RemoteRef": "develop",
+      "RemoteSha": "cff33632892d3216b749a38c6abab5238e6465d1"
     },
     "Eunomia": {
       "Package": "Eunomia",
