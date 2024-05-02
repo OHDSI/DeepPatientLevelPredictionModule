@@ -120,7 +120,7 @@
       "RemoteUsername": "ohdsi",
       "RemoteRepo": "DeepPatientLevelPrediction",
       "RemoteRef": "develop",
-      "RemoteSha": "7f668e70f823c4f774a5428d1f4be445e42bffe5"
+      "RemoteSha": "e1db512fe079f924baede1886e2fa511404f1c69"
     },
     "Eunomia": {
       "Package": "Eunomia",
